@@ -1,0 +1,28 @@
+.card-body
+{
+  text-align: center;
+}
+.card-title
+{
+  font-weight: bold;
+  color: #0d6efd;
+}
+h5
+{
+  height: 60px;
+}
+.card:hover{
+  transform: scale(1.1);
+  transition: .5s ease-in-out all;
+}
+.product-rating {
+  display: flex;
+  align-items: center;
+}
+
+.star-rating {
+  color: #ffc107; /* Yellow color for stars */
+  /* font-size: 24px; */
+  margin-left: 40%;
+}
+

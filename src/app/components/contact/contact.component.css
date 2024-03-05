@@ -1,0 +1,18 @@
+.btn
+{
+  margin-top: 50px;
+  width: 120px;
+}
+.contact-form
+{
+  margin-top: 50px;
+}
+img
+{
+  border-radius: 50%;
+  transition: .5s ease-in-out all;
+}
+img:hover
+{
+  border-radius: 0;
+}

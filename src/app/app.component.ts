@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ColorService } from './service/color.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'store';
+  constructor(private colorService: ColorService) {}
+
+  ngOnInit(): void {
+    const storedColor = localStorage.getItem('websiteColor');
+    if (storedColor) {
+      this.colorService.setWebsiteColor(storedColor);
+    }
+  }
 }

@@ -1,0 +1,49 @@
+/* CSS for fantastic styles */
+.details {
+  padding: 50px 0;
+}
+
+.product-image {
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+  font-size: 24px;
+  color: #333;
+}
+.content
+{
+  margin-top: 170px;
+}
+.product-category {
+  font-size: 16px;
+  color: #666;
+}
+
+.product-price {
+  font-size: 20px;
+  color: #ff6600; /* Orange color */
+}
+
+.product-description {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+}
+
+.star-rating {
+  color: #ffc107; /* Yellow color for stars */
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.rating-count {
+  font-size: 16px;
+  color: #888;
+}

@@ -1,0 +1,23 @@
+<section class="details">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <img [src]="prd?.image" class="img-fluid product-image" alt="Product Image">
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="content">
+          <h2 class="product-title">{{ prd?.title }}</h2>
+          <p class="product-category">Category: {{ prd?.category }}</p>
+          <p class="product-price">Price: ${{ prd?.price }}</p>
+          <p class="product-description">{{ prd?.description }}</p>
+          <div class="product-rating">
+            <span [innerHTML]="getStarRating(prd?.rating?.rate)" class="star-rating"></span>
+            <p class="rating-count">({{ prd?.rating?.count }} Reviews)</p>
+          </div>
+          <input type="number" name="quantity" [(ngModel)]="productQuantity" placeholder="Enter Product Quantity" style="margin-right: 20px;">
+          <button class="btn btn-primary add-to-cart-btn" (click)="addToCart(prd)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+.navbar
+{
+  position: sticky;
+  top: 1px;
+  z-index: 100;
+}
+
+.navbar-brand
+{
+  width: 60%;
+  font-family: "Madimi One", sans-serif;
+  color: #0b5ed7;
+}
+.nav-link
+{
+  color: #0d6efd;
+  font-weight: bold;
+  transition: .5s ease-in-out all;
+}
+.nav-link:active,.nav-link:hover
+{
+  color: #0b5ed7;
+  text-decoration: underline;
+}

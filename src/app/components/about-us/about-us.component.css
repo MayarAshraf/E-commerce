@@ -1,0 +1,23 @@
+.about-section
+{
+  margin-top: 100px;
+}
+img
+{
+  width: 100%;
+}
+h2
+{
+  font-weight: bold;
+  font-family: "Madimi One", sans-serif;
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: var(--website-color);
+}
+.content
+{
+  margin-top: 150px;
+}
+.btn{
+  margin-top: 50px;
+}

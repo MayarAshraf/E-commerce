@@ -1,0 +1,33 @@
+<section class="cart">
+  <div class="container">
+    <div *ngIf="cart" class="row">
+      <div class="col">
+        <h2>Cart</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Product ID</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <!-- Add more table headers as needed -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of cart.products" class="cart-item">
+              <td>{{ item.productId }}</td>
+              <td>{{ item.quantity }}</td>
+              <td>{{ 110 | currency }}</td>
+              <!-- Add more table cells as needed -->
+            </tr>
+          </tbody>
+        </table>
+        <!-- <p>Total Price: ${{ getTotalPrice() }}</p> -->
+      </div>
+    </div>
+    <div *ngIf="!cart" class="row">
+      <div class="col">
+        <p>No items in the cart.</p>
+      </div>
+    </div>
+  </div>
+</section>

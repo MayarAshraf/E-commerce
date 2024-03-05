@@ -1,0 +1,21 @@
+
+<div class="container">
+  <app-product-filter (categorySelected)="loadProducts($event)"></app-product-filter>
+  <app-product-search (searchId)="searchProductById($event)"></app-product-search>
+  <div class="row">
+    <div class="col-lg-4 col-md-6 mb-4" *ngFor="let prd of prdList">
+      <div class="card h-100">
+        <img [src]="prd.image" class="card-img-top img-fluid" alt="Product Image" style="height: 300px;" >
+        <div class="card-body">
+          <h5 class="card-title">{{prd.title}}</h5>
+          <p class="card-text">${{prd.price}}</p>
+          <div  class="product-rating">
+            <span [innerHTML]="getStarRating(prd.rating.rate)" class="star-rating"></span>
+          </div>
+          <p class="card-text">({{ prd.rating.count }} Reviews)</p>
+          <button href="#" class="btn btn-primary" (click)="openPrdDetails(prd.id)" >Product Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

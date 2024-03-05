@@ -1,0 +1,17 @@
+.carousel-item,.carousel-inner
+{
+  height: 100vh;
+}
+.carousel-item img
+{
+  height: 100%;
+}
+.carousel-caption
+{
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  width: 40%;
+  margin-left: 15%;
+  opacity: .7;
+}
